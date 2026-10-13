@@ -51,11 +51,17 @@ The primary objective of this project is to build and deploy a dynamic web appli
 
 ### 1. User Input Form (`signup.html`)
 The user fills in fields such as Name, Email, Website, Comment, and Gender on the input form:
-![Signup Form Input](./Screenshot%202026-10-08%20180644.png)
+
+![Signup Form Input](./Screenshot%202026-10-08%20180644.png)<img width="1007" height="816" alt="Screenshot 2026-10-08 180644" src="https://github.com/user-attachments/assets/9b7d7023-a183-4a14-bd03-b4a720acc2a7" />
+
 
 ### 2. Form Submission Output Page (`submit.php`)
 Upon submission, the PHP backend displays a success message ("New record created successfully!") along with the submitted data:
-![Form Submission Output](./Screenshot%202026-10-08%20180541.png)
+
+
+![Form Submission Output](./Screenshot%202026-10-08%20180541.png)<img width="1905" height="846" alt="Screenshot 2026-10-08 180541" src="https://github.com/user-attachments/assets/ec2206f9-18e9-43fc-ae1a-30adec389762" /> <img width="1490" height="983" alt="Screenshot 2026-10-08 181138" src="https://github.com/user-attachments/assets/6b09eb81-ff38-420c-b006-84856e46e5ff" />
+
+
 
 ### 3. Database Verification (MariaDB SQL Terminal)
 Data successfully inserted into the `users` table inside MariaDB on the EC2 instance:
@@ -74,22 +80,7 @@ Data successfully inserted into the `users` table inside MariaDB on the EC2 inst
 
 ---
 
-## 📊 Database Schema
 
-```sql
-CREATE DATABASE FCT;
-
-USE FCT;
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    website VARCHAR(255),
-    comment TEXT,
-    gender VARCHAR(10)
-);
-```
 
 ---
 
